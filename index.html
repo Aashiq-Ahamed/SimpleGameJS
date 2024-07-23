@@ -4,17 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Platformer Game</title>
+    <title>Platformer Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div id="gameContainer">
         <canvas id="gameCanvas"></canvas>
+        <div id="score">Score: 0</div>
         <div id="menu">
             <button onclick="startGame()">Start Game</button>
-            <button onclick="selectLevel(1)">Level 1</button>
-            <button onclick="selectLevel(2)">Level 2</button>
+        </div>
+        <div id="gameOver">
+            <p>You Lost!</p>
+            <button onclick="startGame()">Restart</button>
         </div>
     </div>
     <script src="game.js"></script>
